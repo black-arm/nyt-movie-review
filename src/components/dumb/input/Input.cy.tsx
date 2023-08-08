@@ -13,7 +13,10 @@ describe('<Input />', () => {
 
     it('input style requirements', () => {
         cy.inputTextStyleRequirements(inputTestId)
-        
+        cy.labelStyleRequirements(inputTestId)
+        cy.getByData(inputTestId)
+        .should('have.attr', 'class')
+        .and('match', /mrBoxInput/)
     })
     
     it('input have attribute type and id', () => {
@@ -21,10 +24,6 @@ describe('<Input />', () => {
             .find('input')
             .should('have.attr', 'type', 'email')
             .should('have.attr', 'id', 'email')
-    })
-
-    it('label style requirements', () => {
-        cy.labelStyleRequirements(inputTestId)
     })
     
     it('label have attribute for and text Email', () => {

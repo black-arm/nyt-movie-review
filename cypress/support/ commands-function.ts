@@ -4,10 +4,8 @@ export function getByData(testId: string){
 }
 
 export function inputTextStyleRequirements(inputTestId: string){
-    cy.getByData(inputTestId)
-        .should('have.attr', 'class')
-        .and('match', /mrBoxInput/)
-        .find('input')
+
+    cy.getByData(inputTestId).find('input')
         .should('have.attr', 'class')
         .and('match', /mrInput/)
 }
