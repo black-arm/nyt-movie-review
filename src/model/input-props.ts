@@ -7,5 +7,5 @@ export interface InputProps {
     type?: string;
     isInvalid?: boolean;
     children?: any;
-    inputChange?: (e: ChangeEvent<HTMLInputElement>) => {}
+    inputChange?(e: ChangeEvent<HTMLInputElement>): void;
 }

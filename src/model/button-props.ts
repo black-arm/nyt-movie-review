@@ -2,5 +2,6 @@ export interface ButtonProps {
     buttonTestId?: string;
     children?: any;
     color?: 'blue'| 'black',
-    buttonClick?: () =>{}
+    buttonClick?: () =>{},
+    type?: 'button'| 'submit'| 'reset'| undefined
 }
