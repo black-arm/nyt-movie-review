@@ -33,7 +33,14 @@ describe('<Input />', () => {
     })
 
     it('Type email', () => {
+        const onChange = cy.spy().as('onChangeSpy')
+        cy.mount(<Input inputTestId={inputTestId} 
+            type="email"
+            inputId="email"
+            label="Email"
+            inputChange={onChange} />)
         cy.getByData(inputTestId).find('input').type('asant.b12@gmail.com')
+        cy.get('@onChangeSpy').should('have.been.called')
     })
 
     it('error email', () => {
