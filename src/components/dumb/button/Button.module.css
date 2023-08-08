@@ -1,0 +1,15 @@
+
+.mrGeneralButton {
+    padding: 0.6rem;
+    border: 0px;
+    border-radius: 3px;
+    color: white;
+}
+
+.mrBlueButton {
+    background-color: #326890;
+}
+
+.mrBlackButton {
+    background-color: #000;
+}
