@@ -2,9 +2,9 @@ import { ButtonProps } from "@/model/button-props"
 import React from "react"
 import style from './Button.module.css'
 
-export default function Button({ buttonTestId, children, color = 'blue', buttonClick }: ButtonProps) {
+export default function Button({ buttonTestId, children, color = 'blue', buttonClick, type = 'button' }: ButtonProps) {
 
-    return <button data-testid={buttonTestId} 
+    return <button type={type} data-testid={buttonTestId} 
         className={`${style.mrGeneralButton} ${color === 'blue' ? style.mrBlueButton : style.mrBlackButton }`}
         onClick={(e) => {
             e.stopPropagation()
