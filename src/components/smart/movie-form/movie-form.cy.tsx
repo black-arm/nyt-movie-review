@@ -3,6 +3,7 @@ import MovieForm from "./movie-form"
 describe('<MovieForm />', () => {
 
     beforeEach(() => {
+        cy.viewport(1280, 720)
         cy.mount(<MovieForm />)
     })
 
