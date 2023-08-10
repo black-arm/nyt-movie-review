@@ -9,7 +9,7 @@ const Modal = ({ isOpen, closeModal, reviewer }: ModalProps) => {
 
   if(!isOpen) return null;
 
-  let src = '/images/no_photo_available.jpeg', width = 250, height = 250;
+  let src = '/images/no_photo_available.jpeg', width = 210, height = 140;
   
   if(reviewer?.multimedia?.resource && reviewer.multimedia.resource.src){
     src = reviewer.multimedia.resource.src

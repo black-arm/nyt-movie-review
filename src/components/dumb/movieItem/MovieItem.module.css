@@ -1,0 +1,17 @@
+.movieItem {
+    display: flex;
+    padding: 2rem;
+    border-bottom: 1px solid lightgray;
+}
+
+.movieInfo {
+    display: flex;
+    flex-direction:column;
+    max-width: 40rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.noMargin {
+    margin: 0px;
+}
