@@ -4,24 +4,15 @@ import styles from './Modal.module.css';
 import { ModalProps } from '@/model';
 import Image from 'next/image';
 import DOMPurify from 'dompurify';
+import MrImage from '../mrImage/MrImage';
 
 const Modal = ({ isOpen, closeModal, reviewer }: ModalProps) => {
 
   if(!isOpen) return null;
 
-  let src = '/images/no_photo_available.jpeg', width = 210, height = 140;
-  
-  if(reviewer?.multimedia?.resource && reviewer.multimedia.resource.src){
-    src = reviewer.multimedia.resource.src
-  }
-
-  if(reviewer?.multimedia?.resource && reviewer.multimedia.resource.width){
-    width = reviewer.multimedia.resource.width;
-  }
-
-  if(reviewer?.multimedia?.resource && reviewer.multimedia.resource.height){
-    height = reviewer.multimedia.resource.height;
-  }
+  let src = reviewer?.multimedia?.resource?.src
+  let height = reviewer?.multimedia?.resource?.height
+  let width = reviewer?.multimedia?.resource?.width
 
   return (
     <div className={styles.modalOverlay} data-testid="modalReviewer">
@@ -34,8 +25,7 @@ const Modal = ({ isOpen, closeModal, reviewer }: ModalProps) => {
               className={styles.bio} dangerouslySetInnerHTML={{ __html: reviewer?.bio ? DOMPurify.sanitize(reviewer.bio): '' }}>
             </div>
             <div data-testid="image">
-              
-              <Image loader={imageLoader}  src={src} width={width} height={height} alt='profile'/>
+              <MrImage src={src} width={width} height={height} alt='profile'/>
             </div>
           </div>
         </div>

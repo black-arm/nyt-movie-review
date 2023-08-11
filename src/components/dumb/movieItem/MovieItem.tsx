@@ -1,23 +1,13 @@
 import { MovieReview } from '@/model/movieReview'
 import style from './MovieItem.module.css'
 import Image from 'next/image'
+import MrImage from '../mrImage/MrImage'
 
 export default function MovieItem({ movie }: {movie?: MovieReview}){
 
-  let src = '/images/no_photo_available.jpeg', width = 250, height = 250;
-  
-  if(movie?.multimedia?.src){
-    src = movie.multimedia.src
-  }
-
-  if(movie?.multimedia?.width){
-    width = movie.multimedia.width;
-  }
-
-  if(movie?.multimedia?.height){
-    height = movie.multimedia?.height;
-  }
-
+  let src = movie?.multimedia?.src
+  let width = movie?.multimedia?.width
+  let height = movie?.multimedia?.height
 
   return <div data-testid='movieItem' className={style.movieItem}>
     <div data-testid='date'>{movie?.publication_date}</div>
@@ -27,7 +17,7 @@ export default function MovieItem({ movie }: {movie?: MovieReview}){
       <p className={style.noMargin}>{movie?.summary_short}</p>
     </div>
     <div data-testid='image'>
-      <Image src={src} width={width} height={height} loader={({src}) => src} alt='film Image'/>
+      <MrImage src={src} width={width} height={height} alt='film Image'/>
     </div>
   </div>
 }
