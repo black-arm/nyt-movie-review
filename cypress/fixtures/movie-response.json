@@ -1,0 +1,47 @@
+{
+    "status": "OK",
+    "copyright": "Copyright (c) 2023 The New York Times Company. All Rights Reserved.",
+    "has_more": false,
+    "num_results": 2,
+    "results": [
+      {
+        "display_title": "The Super Mario Bros. Movie",
+        "mpaa_rating": "PG",
+        "critics_pick": 0,
+        "byline": "Calum Marsh",
+        "headline": "‘The Super Mario Bros. Movie’ Review: This Ain’t No Game",
+        "summary_short": "A famed video game character side-scrolls once again to the big screen in this bland, witless and flagrantly pandering animated comedy.",
+        "publication_date": "2023-04-05",
+        "opening_date": "2023-04-05",
+        "date_updated": "2023-04-05 14:17:03",
+        "link": {
+          "type": "article",
+          "url": "https://www.nytimes.com/2023/04/05/movies/the-super-mario-bros-movie-review.html",
+          "suggested_link_text": "Read the New York Times Review of The Super Mario Bros. Movie"
+        },
+        "multimedia": {
+          "type": "mediumThreeByTwo210",
+          "src": "https://static01.nyt.com/images/2023/04/05/multimedia/05super-mario-bros-movie-hfvl/05super-mario-bros-movie-hfvl-mediumThreeByTwo440.jpg",
+          "height": 140,
+          "width": 210
+        }
+      },
+      {
+        "display_title": "Super Mario Brothers",
+        "mpaa_rating": "PG",
+        "critics_pick": 0,
+        "byline": "Janet Maslin",
+        "headline": "SUPER MARIO BROTHERS (MOVIE)",
+        "summary_short": "Brooklyn dinosaurs, via video game. Human cast surprisingly unscathed.",
+        "publication_date": "1993-05-29",
+        "opening_date": "1993-05-28",
+        "date_updated": "2017-11-02 04:17:45",
+        "link": {
+          "type": "article",
+          "url": "https://www.nytimes.com/1993/05/29/movies/review-film-plumbing-a-video-game-to-its-depths.html",
+          "suggested_link_text": "Read the New York Times Review of Super Mario Brothers"
+        },
+        "multimedia": null
+      }
+    ]
+  }
