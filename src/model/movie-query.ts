@@ -4,4 +4,5 @@ export interface MovieQuery {
     reviewer: string | null;
     startDate: Date | null;
     endDate: Date | null;
+    offset?: number;
 }

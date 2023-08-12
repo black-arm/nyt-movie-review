@@ -48,35 +48,71 @@ export const getMoviesReview: MrResponse<MovieReview> = {
     copyright: 'copyright',
     num_results: 2
 }
+export const getReviewer = {
+  status: "OK",
+  copyright: "Copyright (c) 2023 The New York Times Company. All Rights Reserved.",
+  num_results: 1,
+  results: [
+    {
+      display_name: "A. O. Scott",
+      sort_name: "A. O. Scott",
+      status: "full-time",
+      bio: "A. O. Scott joined The New York Times as a film critic in January 2000, and was named a chief critic in 2004. Previously, Mr. Scott had been the lead Sunday book reviewer for Newsday and a frequent contributor to Slate, The New York Review of Books, and many other publications. \n<br/><br/>\nIn the 1990s he served on the editorial staffs of Lingua Franca and The New York Review of Books. He also edited \"A Bolt from the Blue and Other Essays,\" a collection by Mary McCarthy, which was published by The New York Review of Books in 2002. \n<br/><br/>\nMr. Scott was a finalist for the Pulitzer Prize in Criticism in 2010, the same year he served as co-host (with Michael Phillips of the Chicago Tribune) on the last season of \"At the Movies,\" the syndicated film-reviewing program started by Roger Ebert and Gene Siskel.\n<br/><br/>\nA frequent presence on radio and television, Mr. Scott is Distinguished Professor of Film Criticism at Wesleyan University and the author of Better Living Through Criticism, forthcoming in 2016 from The Penguin Press. A collection of his film writing will be published by Penguin in 2017. \n<br/><br/>\nHe lives in Brooklyn with his family.",
+      seo_name: "A-O-Scott",
+      multimedia: {
+        resource: {
+          type: "image",
+          src: "http://static01.nyt.com/images/2015/10/07/topics/ao-scott/ao-scott-articleInline.jpg",
+          height: 163,
+          width: 220,
+          credit: "Earl Wilson/<br/>The New York Times"
+        }
+      }
+    }
+  ]
+}
 
-export const mockNetworkResponse = () => {
+const movieReviewEndpoint = `${baseUrl}/reviews/search.json`;
+const movieReviewParams = {
+  query: 'Super Mario Bros',
+  reviewer: 'Antony Scott',
+  offset: 0,
+  'publication-date': '2023-04-05:2023-05-05',
+  'api-key': Cypress.env('API_KEY')
+}
+
+export const mockMovieReviewNetworkResponse = () => {
     const mock = new MockAdapter(axios)
+    mock.onGet(movieReviewEndpoint, { params: movieReviewParams }).reply(200, getMoviesReview)
+}
 
-    mock.onGet(`${baseUrl}/reviews/search.json`, { params: {
-      query: 'Super Mario Bros',
-      reviewer: 'Antony Scott',
-      'publication-date': '2023-04-05:2023-05-05',
-      'api-key': apiKey
-
-    }}).reply(200, getMoviesReview)
+export const mockMovieReviewNetworkResponseForShowMoreToTrue = () => {
+  const mock = new MockAdapter(axios)
+  mock.onGet(movieReviewEndpoint, { params: {
+    ...movieReviewParams,
+    offset: 20  
+  }}).reply(200, {
+    ...getMoviesReview,
+    results: [],
+    num_results: 20
+  })
 }
 
 export const mockNetworkError = ()=>{
 
   const mock = new MockAdapter(axios)
 
-    mock.onGet(`${baseUrl}/reviews/search.json`, { params: {
-      query: 'Super Mario Bros',
-      reviewer: 'Antony Scott',
-      'publication-date': '2023-04-05:2023-05-05',
-      'api-key': apiKey
-
-    }}).reply(401, {
-      fault: {
-        faultstring: "Failed to resolve API Key variable request.queryparam.api-key",
-        detail: {
-          "errorcode": "steps.oauth.v2.FailedToResolveAPIKey"
-        }
+  mock.onGet(`${baseUrl}/reviews/search.json`, { params: movieReviewParams }).reply(401, {
+    fault: {
+      faultstring: "Failed to resolve API Key variable request.queryparam.api-key",
+      detail: {
+        "errorcode": "steps.oauth.v2.FailedToResolveAPIKey"
       }
-    })
+    }
+  })
+}
+
+export const mockReviewerNetworkResponse = (reviewer: string) => {
+  const mock = new MockAdapter(axios)
+  mock.onGet(`${baseUrl}/critics/${reviewer}.json`).reply(200, getReviewer)
 }
