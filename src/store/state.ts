@@ -2,7 +2,7 @@ import { Reviewer } from "@/model";
 import { MovieReview } from "@/model/movieReview";
 
 export interface State {
-    movies: MovieReview[];
+    movies: MovieReview[] | null;
     viewShowMore: boolean;
     loading: 'idle'| 'pending'| 'succeded'| 'failed';
     errorMessage: string | null;
@@ -10,7 +10,7 @@ export interface State {
 }
 
 export const initialState: State = {
-    movies: [],
+    movies: null,
     viewShowMore: true,
     errorMessage: null,
     loading: 'idle',

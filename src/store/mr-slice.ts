@@ -22,7 +22,11 @@ export const movieReviewSlice = createSlice({
         builder.addCase(fetchMovieReviewByMovieQuery.fulfilled, (state, action) => {
             state.loading = 'succeded',
             state.viewShowMore = action.payload.num_results === 20;
-            state.movies = [...state.movies, ...action.payload.results]
+            if(action.payload.results && state.movies){
+                state.movies = [...state.movies, ...action.payload.results]
+            }else {
+                state.movies = action.payload.results
+            }
         }),
         builder.addCase(fetchReviewer.pending, (state, action) =>{
             state.loading = 'pending'

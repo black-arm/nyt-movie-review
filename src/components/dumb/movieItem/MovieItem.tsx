@@ -10,7 +10,7 @@ export default function MovieItem({ movie }: {movie?: MovieReview}){
   let height = movie?.multimedia?.height
 
   return <div data-testid='movieItem' className={style.movieItem}>
-    <div data-testid='date'>{movie?.publication_date}</div>
+    <div data-testid='date'>{movie?.publication_date as string}</div>
     <div  data-testid='movie' className={style.movieInfo}>
       <h2 className={style.noMargin}>{movie?.headline}</h2>
       <h4  data-testid='reviewer' className={style.noMargin}>By {movie?.byline}</h4>
