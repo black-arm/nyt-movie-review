@@ -9,6 +9,7 @@ export const fetchMovieReviewByMovieQuery = createAsyncThunk('movie/fetchMovieRe
             const response = await httpMovieReview(movieQuery);
             return response.data
         } catch(error){
+            console.log(error)
             const axiosError = error as AxiosError<MrError>
             return thunkApi.rejectWithValue(axiosError.response?.data.fault.faultstring)
         }

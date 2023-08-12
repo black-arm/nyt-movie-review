@@ -2,7 +2,7 @@ import { MovieQuery, MrResponse } from "@/model"
 import { store } from "."
 import { fetchMovieReviewByMovieQuery, fetchReviewer } from "./mr-async-thunks"
 import { MovieReview } from "@/model/movieReview"
-import { getReviewer, mockMovieReviewNetworkResponse, mockNetworkError, mockReviewerNetworkResponse } from "./mr-api/mr-api.mock"
+import { getReviewer, mockMovieReviewNetworkResponse, mockMovieReviewNetworkResponseForShowMoreToTrue, mockNetworkError, mockReviewerNetworkResponse } from "./mr-api/mr-api.mock"
 
 describe('mrReducer', () => {
     
@@ -64,7 +64,15 @@ describe('mrReducer', () => {
         })
 
         it('should viewShowMore to true', async () =>{
-            mockMovieReviewNetworkResponse()
+            mockMovieReviewNetworkResponseForShowMoreToTrue()
+            const result = await store.dispatch(fetchMovieReviewByMovieQuery({ movieQuery: {
+                ...movieQuery,
+                offset: 20
+            }, isNew: true }))
+            console.log(result)
+            expect(result.type).to.equal('movie/fetchMovieReview/fulfilled')
+            const state = store.getState().movieReview
+            expect(state.viewShowMore).to.true
         })
     })
 

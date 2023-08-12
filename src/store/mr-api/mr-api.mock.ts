@@ -2,7 +2,8 @@ import { MrResponse } from '@/model';
 import { MovieReview } from '@/model/movieReview';
 import axios from 'axios'
 import MockAdapter from 'axios-mock-adapter';
-import { apiKey, baseUrl } from './mr-api';
+import { apiKey } from './mr-api';
+import { mrEndpoints } from './mr-endpoints';
 
 export const getMoviesReview: MrResponse<MovieReview> = {
     results: [{
@@ -72,23 +73,22 @@ export const getReviewer = {
   ]
 }
 
-const movieReviewEndpoint = `${baseUrl}/reviews/search.json`;
 const movieReviewParams = {
   query: 'Super Mario Bros',
   reviewer: 'Antony Scott',
   offset: 0,
   'publication-date': '2023-04-05:2023-05-05',
-  'api-key': Cypress.env('API_KEY')
+  'api-key': apiKey
 }
 
 export const mockMovieReviewNetworkResponse = () => {
     const mock = new MockAdapter(axios)
-    mock.onGet(movieReviewEndpoint, { params: movieReviewParams }).reply(200, getMoviesReview)
+    mock.onGet(mrEndpoints.movieReviewEndpoint, { params: movieReviewParams }).reply(200, getMoviesReview)
 }
 
 export const mockMovieReviewNetworkResponseForShowMoreToTrue = () => {
   const mock = new MockAdapter(axios)
-  mock.onGet(movieReviewEndpoint, { params: {
+  mock.onGet(mrEndpoints.movieReviewEndpoint, { params: {
     ...movieReviewParams,
     offset: 20  
   }}).reply(200, {
@@ -102,7 +102,7 @@ export const mockNetworkError = ()=>{
 
   const mock = new MockAdapter(axios)
 
-  mock.onGet(`${baseUrl}/reviews/search.json`, { params: movieReviewParams }).reply(401, {
+  mock.onGet(mrEndpoints.movieReviewEndpoint, { params: movieReviewParams }).reply(401, {
     fault: {
       faultstring: "Failed to resolve API Key variable request.queryparam.api-key",
       detail: {
@@ -114,5 +114,5 @@ export const mockNetworkError = ()=>{
 
 export const mockReviewerNetworkResponse = (reviewer: string) => {
   const mock = new MockAdapter(axios)
-  mock.onGet(`${baseUrl}/critics/${reviewer}.json`).reply(200, getReviewer)
+  mock.onGet(mrEndpoints.reviewerEndpoint(reviewer)).reply(200, getReviewer)
 }

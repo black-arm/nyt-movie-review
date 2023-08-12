@@ -2,8 +2,8 @@ import { MovieQuery, MrResponse, Reviewer } from "@/model"
 import { MovieReview } from "@/model/movieReview"
 import { formatDateRange } from "@/utilities/format-date-range"
 import axios from "axios"
+import { mrEndpoints } from "./mr-endpoints"
 
-export const baseUrl = 'https://api.nytimes.com/svc/movies/v2'
 export const apiKey = process.env.API_KEY
 
 export const httpMovieReview = (movieQuery: MovieQuery) => {
@@ -13,7 +13,7 @@ export const httpMovieReview = (movieQuery: MovieQuery) => {
         publicationDate = formatDateRange(movieQuery.startDate, movieQuery.endDate)
     }
 
-    return axios.get<MrResponse<MovieReview>>(`${baseUrl}/reviews/search.json`, {
+    return axios.get<MrResponse<MovieReview>>(mrEndpoints.movieReviewEndpoint, {
         params: {
             query: movieQuery.query,
             reviewer: movieQuery.reviewer,
@@ -25,7 +25,7 @@ export const httpMovieReview = (movieQuery: MovieQuery) => {
 }
 
 export const httpReviewer = (reviewer: string) => {
-    return axios.get<MrResponse<Reviewer>>(`${baseUrl}/critics/${reviewer}.json`, {
+    return axios.get<MrResponse<Reviewer>>(mrEndpoints.reviewerEndpoint(reviewer), {
         params: {'api-key': apiKey}
     })
 }
