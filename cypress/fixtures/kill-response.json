@@ -1,0 +1,443 @@
+{
+    "status": "OK",
+    "copyright": "Copyright (c) 2023 The New York Times Company. All Rights Reserved.",
+    "has_more": true,
+    "num_results": 20,
+    "results": [
+      {
+        "display_title": "Kill Boksoon",
+        "mpaa_rating": "",
+        "critics_pick": 1,
+        "byline": "Robert Daniels",
+        "headline": "‘Kill Boksoon’ Review: It’s a Deadly Job for a Busy Single Mom",
+        "summary_short": "An assassin must choose between the murderous career she loves and the daughter she’s been hiding it from.",
+        "publication_date": "2023-03-30",
+        "opening_date": "2023-03-31",
+        "date_updated": "2023-03-30 11:04:03",
+        "link": {
+          "type": "article",
+          "url": "https://www.nytimes.com/2023/03/30/movies/kill-boksoon-review.html",
+          "suggested_link_text": "Read the New York Times Review of Kill Boksoon"
+        },
+        "multimedia": {
+          "type": "mediumThreeByTwo210",
+          "src": "https://static01.nyt.com/images/2023/03/31/multimedia/30kill-boksoon-review1-qjpz/30kill-boksoon-review1-qjpz-mediumThreeByTwo440.jpg",
+          "height": 140,
+          "width": 210
+        }
+      },
+      {
+        "display_title": "Orphan: First Kill",
+        "mpaa_rating": "R",
+        "critics_pick": 0,
+        "byline": "Ben Kenigsberg",
+        "headline": "‘Orphan: First Kill’ Review: Still Slashing After All These Years",
+        "summary_short": "Isabelle Fuhrman, who in “Orphan” had to be convincing as a child of age 9, reprises her role 13 years later in this prequel set two years earlier.",
+        "publication_date": "2022-08-18",
+        "opening_date": "2022-08-19",
+        "date_updated": "2022-08-18 11:02:02",
+        "link": {
+          "type": "article",
+          "url": "https://www.nytimes.com/2022/08/18/movies/orphan-first-kill-review.html",
+          "suggested_link_text": "Read the New York Times Review of Orphan: First Kill"
+        },
+        "multimedia": {
+          "type": "mediumThreeByTwo210",
+          "src": "https://static01.nyt.com/images/2022/08/17/arts/orphan1/orphan1-mediumThreeByTwo440.jpg",
+          "height": 140,
+          "width": 210
+        }
+      },
+      {
+        "display_title": "The Killer",
+        "mpaa_rating": "",
+        "critics_pick": 0,
+        "byline": "Robert Daniels",
+        "headline": "‘The Killer’ Review: Stylistic Action Without the Heart",
+        "summary_short": "In this South Korean film, a teenage girl kidnapped by human traffickers brings an assassin out of retirement to save her.",
+        "publication_date": "2022-07-13",
+        "opening_date": null,
+        "date_updated": "2022-07-13 11:01:18",
+        "link": {
+          "type": "article",
+          "url": "https://www.nytimes.com/2022/07/13/movies/the-killer-review.html",
+          "suggested_link_text": "Read the New York Times Review of The Killer"
+        },
+        "multimedia": {
+          "type": "mediumThreeByTwo210",
+          "src": "https://static01.nyt.com/images/2022/07/15/arts/killer-1/killer-1-mediumThreeByTwo440.jpg",
+          "height": 140,
+          "width": 210
+        }
+      },
+      {
+        "display_title": "Halloween Kills",
+        "mpaa_rating": "R",
+        "critics_pick": 0,
+        "byline": "Jeannette Catsoulis",
+        "headline": "‘Halloween Kills’ Review: There Will Be (Copious Amounts of) Blood",
+        "summary_short": "The newest installment of the “Halloween” franchise, starring Jamie Lee Curtis, is a murderous mess that substitutes corpses for characters.",
+        "publication_date": "2021-10-14",
+        "opening_date": "2021-10-15",
+        "date_updated": "2021-10-14 17:14:03",
+        "link": {
+          "type": "article",
+          "url": "https://www.nytimes.com/2021/10/14/movies/halloween-kills-review.html",
+          "suggested_link_text": "Read the New York Times Review of Halloween Kills"
+        },
+        "multimedia": {
+          "type": "mediumThreeByTwo210",
+          "src": "https://static01.nyt.com/images/2021/10/14/arts/14halloween-kills-art/14halloween-kills-art-mediumThreeByTwo440.jpg",
+          "height": 140,
+          "width": 210
+        }
+      },
+      {
+        "display_title": "Pharma Bro",
+        "mpaa_rating": "",
+        "critics_pick": 0,
+        "byline": "Ben Kenigsberg",
+        "headline": "‘Pharma Bro’ Review: Behind the Smirk",
+        "summary_short": "This documentary grasps at straws trying to prove that the former pharmaceutical executive Martin Shkreli might not be as loathsome as his reputation suggests.",
+        "publication_date": "2021-10-05",
+        "opening_date": "2021-10-05",
+        "date_updated": "2021-10-05 11:01:03",
+        "link": {
+          "type": "article",
+          "url": "https://www.nytimes.com/2021/10/05/movies/pharma-bro-review.html",
+          "suggested_link_text": "Read the New York Times Review of Pharma Bro"
+        },
+        "multimedia": null
+      },
+      {
+        "display_title": "The Killing of Two Lovers",
+        "mpaa_rating": "R",
+        "critics_pick": 1,
+        "byline": "Nicolas Rapold",
+        "headline": "‘The Killing of Two Lovers’ Review: What Lies Beneath",
+        "summary_short": "Under the veneer of an unusual marriage is an uncontrollable undercurrent to which everyone is susceptible.",
+        "publication_date": "2021-05-13",
+        "opening_date": "2021-05-14",
+        "date_updated": "2021-05-13 15:41:13",
+        "link": {
+          "type": "article",
+          "url": "https://www.nytimes.com/2021/05/13/movies/the-killing-of-two-lovers-review.html",
+          "suggested_link_text": "Read the New York Times Review of The Killing of Two Lovers"
+        },
+        "multimedia": {
+          "type": "mediumThreeByTwo210",
+          "src": "https://static01.nyt.com/images/2021/05/14/arts/13killing-of-two-lovers-pix/merlin_187492188_264fcec7-dbef-46c5-b8d2-4f36fac6ce48-mediumThreeByTwo440.jpg",
+          "height": 140,
+          "width": 210
+        }
+      },
+      {
+        "display_title": "Why Did You Kill Me?",
+        "mpaa_rating": "TV-MA",
+        "critics_pick": 0,
+        "byline": "Calum Marsh",
+        "headline": "‘Why Did You Kill Me?’ Review: To Catfish a Killer",
+        "summary_short": "In this Netflix true crime documentary, murder meets Myspace.",
+        "publication_date": "2021-04-15",
+        "opening_date": "2021-04-14",
+        "date_updated": "2021-04-15 11:04:03",
+        "link": {
+          "type": "article",
+          "url": "https://www.nytimes.com/2021/04/15/movies/why-did-you-kill-me-review.html",
+          "suggested_link_text": "Read the New York Times Review of Why Did You Kill Me?"
+        },
+        "multimedia": {
+          "type": "mediumThreeByTwo210",
+          "src": "https://static01.nyt.com/images/2021/04/19/arts/whydid1/whydid1-mediumThreeByTwo440.png",
+          "height": 140,
+          "width": 210
+        }
+      },
+      {
+        "display_title": "Kill It and Leave This Town",
+        "mpaa_rating": "",
+        "critics_pick": 0,
+        "byline": "Maya Phillips",
+        "headline": "‘Kill It and Leave This Town’ Review: Grotesque, Bleak and Endless",
+        "summary_short": "One viewing is enough for this animated feature debut by the Polish director Mariusz Wilczynski.",
+        "publication_date": "2020-11-26",
+        "opening_date": null,
+        "date_updated": "2020-11-26 12:04:04",
+        "link": {
+          "type": "article",
+          "url": "https://www.nytimes.com/2020/11/26/movies/review-kill-it-and-leave-this-town.html",
+          "suggested_link_text": "Read the New York Times Review of Kill It and Leave This Town"
+        },
+        "multimedia": {
+          "type": "mediumThreeByTwo210",
+          "src": "https://static01.nyt.com/images/2020/11/26/arts/26killit-pix/26killit-pix-mediumThreeByTwo210.jpg",
+          "height": 140,
+          "width": 210
+        }
+      },
+      {
+        "display_title": "You Cannot Kill David Arquette",
+        "mpaa_rating": "R",
+        "critics_pick": 0,
+        "byline": "Teo Bugbee",
+        "headline": "‘You Cannot Kill David Arquette’ Review: Ready to Rumble (Again)?",
+        "summary_short": "David Arquette risks his body and his reputation to win redemption as a professional wrestler in this rough and tumble documentary.",
+        "publication_date": "2020-08-27",
+        "opening_date": "2020-08-21",
+        "date_updated": "2020-08-27 11:04:04",
+        "link": {
+          "type": "article",
+          "url": "https://www.nytimes.com/2020/08/27/movies/you-cannot-kill-david-arquette-review.html",
+          "suggested_link_text": "Read the New York Times Review of You Cannot Kill David Arquette"
+        },
+        "multimedia": {
+          "type": "mediumThreeByTwo210",
+          "src": "https://static01.nyt.com/images/2020/08/25/arts/youcannotkill1/youcannotkill1-mediumThreeByTwo210.jpg",
+          "height": 140,
+          "width": 210
+        }
+      },
+      {
+        "display_title": "The Kill Team",
+        "mpaa_rating": "R",
+        "critics_pick": 0,
+        "byline": "BEN KENIGSBERG",
+        "headline": "‘The Kill Team’ Review: Bullying on the Battlefield",
+        "summary_short": "Alexander Skarsgard stars in a film based on the murders of Afghan civilians by American soldiers nearly a decade ago.",
+        "publication_date": "2019-10-24",
+        "opening_date": "2019-10-25",
+        "date_updated": "2019-11-01 16:44:01",
+        "link": {
+          "type": "article",
+          "url": "https://www.nytimes.com/2019/10/24/movies/the-kill-team-review.html",
+          "suggested_link_text": "Read the New York Times Review of The Kill Team"
+        },
+        "multimedia": {
+          "type": "mediumThreeByTwo210",
+          "src": "https://static01.nyt.com/images/2019/10/24/arts/24killteam/merlin_162980196_c2a146f1-5a88-4e2e-bec6-19dfd36fa254-mediumThreeByTwo210.jpg",
+          "height": 140,
+          "width": 210
+        }
+      },
+      {
+        "display_title": "Killerman",
+        "mpaa_rating": "R",
+        "critics_pick": 0,
+        "byline": "JEANNETTE CATSOULIS",
+        "headline": "‘Killerman’ Review: Don’t Remember My Name",
+        "summary_short": "Liam Hemsworth plays an amnesiac money launderer fleeing corrupt cops in this grimily satisfying thriller.",
+        "publication_date": "2019-08-29",
+        "opening_date": "2019-08-30",
+        "date_updated": "2019-09-06 16:44:01",
+        "link": {
+          "type": "article",
+          "url": "https://www.nytimes.com/2019/08/29/movies/killerman-review.html",
+          "suggested_link_text": "Read the New York Times Review of Killerman"
+        },
+        "multimedia": {
+          "type": "mediumThreeByTwo210",
+          "src": "https://static01.nyt.com/images/2019/08/27/arts/killerman1/killerman1-mediumThreeByTwo210.jpg",
+          "height": 140,
+          "width": 210
+        }
+      },
+      {
+        "display_title": "Killers Anonymous",
+        "mpaa_rating": "R",
+        "critics_pick": 0,
+        "byline": "JEANNETTE CATSOULIS",
+        "headline": "‘Killers Anonymous’ Review: 12 Steps to Disaster",
+        "summary_short": "Gary Oldman and Jessica Alba wisely keep to the periphery of this fiasco about a support group for assassins.",
+        "publication_date": "2019-06-27",
+        "opening_date": "2019-06-28",
+        "date_updated": "2019-07-05 16:44:01",
+        "link": {
+          "type": "article",
+          "url": "https://www.nytimes.com/2019/06/27/movies/killers-anonymous-review.html",
+          "suggested_link_text": "Read the New York Times Review of Killers Anonymous"
+        },
+        "multimedia": {
+          "type": "mediumThreeByTwo210",
+          "src": "https://static01.nyt.com/images/2019/06/26/arts/killers1/killers1-mediumThreeByTwo210.jpg",
+          "height": 140,
+          "width": 210
+        }
+      },
+      {
+        "display_title": "The Man Who Killed Don Quixote",
+        "mpaa_rating": "Not Rated",
+        "critics_pick": 0,
+        "byline": "A.O. SCOTT",
+        "headline": "Review: ‘The Man Who Killed Don Quixote’ Brings Him Back to Life",
+        "summary_short": "Terry Gilliam’s long-deferred tribute to Cervantes’s knight errant finally arrives, starring Jonathan Pryce and Adam Driver.",
+        "publication_date": "2019-04-18",
+        "opening_date": null,
+        "date_updated": "2019-04-26 16:44:02",
+        "link": {
+          "type": "article",
+          "url": "https://www.nytimes.com/2019/04/18/movies/man-who-killed-don-quixote-review.html",
+          "suggested_link_text": "Read the New York Times Review of The Man Who Killed Don Quixote"
+        },
+        "multimedia": {
+          "type": "mediumThreeByTwo210",
+          "src": "https://static01.nyt.com/images/2019/04/19/arts/18manwho1/merlin_153439065_4f784f3f-bef0-44dd-89c0-3c8f7a820f27-mediumThreeByTwo210.jpg",
+          "height": 140,
+          "width": 210
+        }
+      },
+      {
+        "display_title": "The Man Who Killed Hitler and Then The Bigfoot",
+        "mpaa_rating": "Not Rated",
+        "critics_pick": 0,
+        "byline": "BEN KENIGSBERG",
+        "headline": "‘The Man Who Killed Hitler and Then the Bigfoot’ Review: Nuff Said",
+        "summary_short": "The movie’s plot is as absurdly sensational as its title: The government taps Sam Elliott, an aging Nazi hunter, to kill a yeti.",
+        "publication_date": "2019-02-07",
+        "opening_date": "2019-02-08",
+        "date_updated": "2019-02-15 17:44:01",
+        "link": {
+          "type": "article",
+          "url": "https://www.nytimes.com/2019/02/07/movies/the-man-who-killed-hitler-then-the-bigfoot-review.html",
+          "suggested_link_text": "Read the New York Times Review of The Man Who Killed Hitler and Then The Bigfoot"
+        },
+        "multimedia": {
+          "type": "mediumThreeByTwo210",
+          "src": "https://static01.nyt.com/images/2019/02/08/arts/08manwhokilled/merlin_150234621_04a2b464-2e08-4cb8-b309-6130b365007e-mediumThreeByTwo210.jpg",
+          "height": 140,
+          "width": 210
+        }
+      },
+      {
+        "display_title": "Adult Life Skills",
+        "mpaa_rating": "TV-MA",
+        "critics_pick": 0,
+        "byline": "JEANNETTE CATSOULIS",
+        "headline": "‘Adult Life Skills’ Review: In a Shed, and Out of Time",
+        "summary_short": "In this annoyingly quirky British comedy, Jodie Whittaker plays a depressed woman clinging to adolescence.",
+        "publication_date": "2019-01-17",
+        "opening_date": "2019-01-18",
+        "date_updated": "2019-01-25 17:44:01",
+        "link": {
+          "type": "article",
+          "url": "https://www.nytimes.com/2019/01/17/movies/adult-life-skills-review.html",
+          "suggested_link_text": "Read the New York Times Review of Adult Life Skills"
+        },
+        "multimedia": {
+          "type": "mediumThreeByTwo210",
+          "src": "https://static01.nyt.com/images/2019/01/18/arts/18adult1/adult1-mediumThreeByTwo210.jpg",
+          "height": 140,
+          "width": 210
+        }
+      },
+      {
+        "display_title": "The Clovehitch Killer",
+        "mpaa_rating": "",
+        "critics_pick": 0,
+        "byline": "JEANNETTE CATSOULIS",
+        "headline": "‘The Clovehitch Killer’ Review: Unsolved Murders Haunt a Small Town",
+        "summary_short": "Favoring atmosphere over action, this slow-burning thriller follows the search for a serial killer in a Kentucky town.",
+        "publication_date": "2018-11-15",
+        "opening_date": "2018-11-16",
+        "date_updated": "2018-11-22 17:44:01",
+        "link": {
+          "type": "article",
+          "url": "https://www.nytimes.com/2018/11/15/movies/the-clovehitch-killer-review.html",
+          "suggested_link_text": "Read the New York Times Review of The Clovehitch Killer"
+        },
+        "multimedia": {
+          "type": "mediumThreeByTwo210",
+          "src": "https://static01.nyt.com/images/2018/11/13/arts/clovehitch1/clovehitch1-mediumThreeByTwo210.jpg",
+          "height": 140,
+          "width": 210
+        }
+      },
+      {
+        "display_title": "Hunter Killer",
+        "mpaa_rating": "R",
+        "critics_pick": 0,
+        "byline": "BEN KENIGSBERG",
+        "headline": "Review: ‘Hunter Killer’ Explores the Depths of Geopolitics",
+        "summary_short": "Gerard Butler stars as the captain of an American submarine who must rescue the Russian president.",
+        "publication_date": "2018-10-25",
+        "opening_date": "2018-10-26",
+        "date_updated": "2018-11-24 17:44:02",
+        "link": {
+          "type": "article",
+          "url": "https://www.nytimes.com/2018/10/25/movies/hunter-killer-review.html",
+          "suggested_link_text": "Read the New York Times Review of Hunter Killer"
+        },
+        "multimedia": {
+          "type": "mediumThreeByTwo210",
+          "src": "https://static01.nyt.com/images/2018/10/26/arts/26hunterkiller/26hunterkiller-mediumThreeByTwo210-v2.jpg",
+          "height": 140,
+          "width": 210
+        }
+      },
+      {
+        "display_title": "Killer Bees",
+        "mpaa_rating": "TV-PG",
+        "critics_pick": 1,
+        "byline": "JASON ZINOMAN",
+        "headline": "Review: ‘Killer Bees’ Tracks Working-Class Athletes in the Hamptons",
+        "summary_short": "The documentary, directed by Benjamin and Orson Cummings, follows the Killer Bees, a predominantly African-American high school basketball team.",
+        "publication_date": "2018-07-26",
+        "opening_date": "2018-07-27",
+        "date_updated": "2018-08-03 16:44:02",
+        "link": {
+          "type": "article",
+          "url": "https://www.nytimes.com/2018/07/26/movies/killer-bees-review.html",
+          "suggested_link_text": "Read the New York Times Review of Killer Bees"
+        },
+        "multimedia": {
+          "type": "mediumThreeByTwo210",
+          "src": "https://static01.nyt.com/images/2018/07/27/arts/27killerbees/merlin_141624528_28196305-ef19-45c7-a5af-f3c6ebcd18c2-mediumThreeByTwo210.jpg",
+          "height": 140,
+          "width": 210
+        }
+      },
+      {
+        "display_title": "I Kill Giants",
+        "mpaa_rating": "Not Rated",
+        "critics_pick": 1,
+        "byline": "JEANNETTE CATSOULIS",
+        "headline": "Review: Slaying Monsters (and Avoiding Grief) in ‘I Kill Giants’",
+        "summary_short": "This magical movie marries adult themes and childlike wonder as a troubled girl embarks on a fantastical quest.",
+        "publication_date": "2018-03-22",
+        "opening_date": "2018-03-23",
+        "date_updated": "2018-03-30 16:44:01",
+        "link": {
+          "type": "article",
+          "url": "https://www.nytimes.com/2018/03/22/movies/i-kill-giants-review.html",
+          "suggested_link_text": "Read the New York Times Review of I Kill Giants"
+        },
+        "multimedia": {
+          "type": "mediumThreeByTwo210",
+          "src": "https://static01.nyt.com/images/2018/03/23/arts/23killgiants1/merlin_135651834_da35096f-806d-435e-836e-ce347967699b-mediumThreeByTwo210.jpg",
+          "height": 140,
+          "width": 210
+        }
+      },
+      {
+        "display_title": "Killing for Love",
+        "mpaa_rating": "",
+        "critics_pick": 0,
+        "byline": "BEN KENIGSBERG",
+        "headline": "Review: ‘Killing for Love’ Revisits a Virginia Murder Case",
+        "summary_short": "The true-crime documentary lays out a persuasive case for reasonable doubt in the case against Jens Soering, who was convicted, along with his girlfriend.",
+        "publication_date": "2017-12-14",
+        "opening_date": "2017-12-15",
+        "date_updated": "2017-12-22 17:44:01",
+        "link": {
+          "type": "article",
+          "url": "https://www.nytimes.com/2017/12/14/movies/killing-for-love-review.html",
+          "suggested_link_text": "Read the New York Times Review of Killing for Love"
+        },
+        "multimedia": {
+          "type": "mediumThreeByTwo210",
+          "src": "https://static01.nyt.com/images/2017/12/15/movies/15killingforlove2/15killingforlove2-mediumThreeByTwo210.jpg",
+          "height": 140,
+          "width": 210
+        }
+      }
+    ]
+  }
