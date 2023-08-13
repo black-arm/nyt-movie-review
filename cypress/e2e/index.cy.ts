@@ -6,7 +6,7 @@ describe('index.tsx', () => {
     })
 
     it('search movie', () => {
-        
+        cy.wait(2000)
         cy.getByData('query').find('input').type('Super Mario')
         cy.getByData('search').click()
         cy.intercept('GET', '*').fixture('movie-response.json').as('movieResponse')
@@ -18,12 +18,14 @@ describe('index.tsx', () => {
 
     
     it('search movie is empty', () => {
+        cy.wait(2000)
         cy.getByData('query').find('input').type('Super Marios')
         cy.getByData('search').click()
         cy.getByData('viewList').contains('No movies found')
     })
 
     it('search movie by show more', () => {
+        cy.wait(2000)
         cy.getByData('query').find('input').type('Kill')
         cy.getByData('search').click()
         cy.getByData('showMore').should('exist')
@@ -34,10 +36,12 @@ describe('index.tsx', () => {
             .should('have.length.greaterThan', 20)
     })
 
-    it.only('open reviewer modal', () => {
+    it('open reviewer modal', () => {
+        cy.wait(2000)
         cy.getByData('query').find('input').type('Kill Bill')
         cy.getByData('search').click()
         cy.getByData('movieItem').eq(1).within($movieItem => {
+            cy.wait(2000)
             cy.wrap($movieItem).getByData('reviewer').find('span').click()
         })
         cy.getByData('modalReviewer').should('exist')

@@ -58,14 +58,29 @@ export default function Home() {
       <TopBar />
       <main className={`${styles.main}`}>
         <MovieForm movieFormSubmit={movieFormSubmit}/>
-        {loading === 'succeded' ? <div data-testid='viewList'>
-          {movieReviews ? movieReviews.map((movie, index) => <MovieItem key={index} movie={movie} 
-            clickReviewer={openReviewerModal}/>): <div className={styles.noMovieBox}><h3>No movies found</h3></div>}
-          {viewShowMore ? <div className={styles.showMoreBox}><Button color='black' buttonTestId='showMore' buttonClick={showMoreClick}>Show More</Button></div>: null}
-        </div> : null}
+        {loading !== 'failed' ? 
+          <div data-testid='viewList'>
+            {movieReviews ? 
+              movieReviews.map((movie, index) => <MovieItem key={index} 
+                                                            movie={movie} 
+                                                            clickReviewer={openReviewerModal}/>)
+              : <div className={styles.noMovieBox}>
+                  <h3>No movies found</h3>
+                </div>}
+            {viewShowMore ? 
+              <div className={styles.showMoreBox}>
+                <Button color='black' 
+                  buttonTestId='showMore' 
+                  buttonClick={showMoreClick}>Show More</Button>
+              </div>
+              : null}
+          </div> : null}
       </main>
-      {loading === 'succeded' ? <Modal isOpen={modalIsOpen} 
-        closeModal={() => setModalIsOpen(false)} reviewer={reviewer ? reviewer: undefined} /> : null }
+      {loading === 'succeded' ? 
+        <Modal isOpen={modalIsOpen} 
+              closeModal={() => setModalIsOpen(false)} 
+              reviewer={reviewer ? reviewer: undefined} /> 
+        : null }
     </>
   )
 }
