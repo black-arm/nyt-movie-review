@@ -1,5 +1,4 @@
 import Head from 'next/head'
-import { Inter } from 'next/font/google'
 import styles from '@/styles/Home.module.css'
 import MovieForm from '@/components/smart/movie-form/movie-form'
 import { MovieQuery } from '@/model'
@@ -8,7 +7,7 @@ import { useMrDispatch, useMrSelector } from '@/store'
 import MovieItem from '@/components/dumb/movieItem/MovieItem'
 import Button from '@/components/dumb/button/Button'
 import { useState } from 'react'
-import TopBar from '@/components/dumb/topBar/topBar'
+import TopBar from '@/components/dumb/topBar/TopBar'
 import Spinner from '@/components/dumb/spinner/Spinner'
 
 export default function Home() {

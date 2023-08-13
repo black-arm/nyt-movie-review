@@ -1,4 +1,4 @@
-import TopBar from "./topBar"
+import TopBar from "./TopBar"
 
 describe('<TopBar />', () => {
 
