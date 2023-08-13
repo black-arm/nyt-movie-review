@@ -8,7 +8,7 @@
 .movieInfo {
     display: flex;
     flex-direction:column;
-    max-width: 40rem;
+    width: 40rem;
     padding-left: 2rem;
     padding-right: 2rem;
 }
