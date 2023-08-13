@@ -19,7 +19,7 @@ export default function MovieItem({ movie, clickReviewer }: MovieItemProps){
     <div data-testid='date'>{movie?.publication_date as string}</div>
     <div  data-testid='movie' className={style.movieInfo}>
       <h2 className={style.noMargin}>{movie?.headline}</h2>
-      <h4  data-testid='reviewer' className={style.noMargin}>By <span onClick={onClickReviewer}>{movie?.byline}</span></h4>
+      <h4  data-testid='reviewer' className={style.noMargin}>By <span className={style.clickReviewer} onClick={onClickReviewer}>{movie?.byline}</span></h4>
       <p className={style.noMargin}>{movie?.summary_short}</p>
     </div>
     <div data-testid='image'>

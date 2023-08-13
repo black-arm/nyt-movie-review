@@ -60,8 +60,8 @@ export default function Home() {
         <MovieForm movieFormSubmit={movieFormSubmit}/>
         {loading === 'succeded' ? <div data-testid='viewList'>
           {movieReviews ? movieReviews.map((movie, index) => <MovieItem key={index} movie={movie} 
-            clickReviewer={openReviewerModal}/>): <h3>No movies found</h3>}
-          {viewShowMore ? <Button color='black' buttonTestId='showMore' buttonClick={showMoreClick}>Show More</Button>: null}
+            clickReviewer={openReviewerModal}/>): <div className={styles.noMovieBox}><h3>No movies found</h3></div>}
+          {viewShowMore ? <div className={styles.showMoreBox}><Button color='black' buttonTestId='showMore' buttonClick={showMoreClick}>Show More</Button></div>: null}
         </div> : null}
       </main>
       {loading === 'succeded' ? <Modal isOpen={modalIsOpen} 
