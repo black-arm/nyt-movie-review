@@ -1,0 +1,15 @@
+.movieForm {
+    display: flex;
+    flex-direction: row;
+    padding: 1rem;
+    justify-content: space-between;
+}
+
+.buttons {
+    display: flex;
+    padding: 1rem;
+}
+
+.buttonItem {
+    padding: 0 0.5rem;
+}

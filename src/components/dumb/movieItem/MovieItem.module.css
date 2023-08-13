@@ -1,0 +1,23 @@
+.movieItem {
+    display: flex;
+    padding: 2rem;
+    border-bottom: 1px solid lightgray;
+    justify-content: center;
+}
+
+.movieInfo {
+    display: flex;
+    flex-direction:column;
+    width: 40rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.noMargin {
+    margin: 0px;
+}
+
+.clickReviewer {
+    cursor: pointer;
+    text-decoration: underline;
+}

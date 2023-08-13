@@ -1,0 +1,10 @@
+.main {
+    margin-top: 3.5rem;
+    padding: 1rem;
+}
+
+.noMovieBox, .showMoreBox {
+    width: 100%;
+    text-align: center;
+    padding: 2rem;
+}

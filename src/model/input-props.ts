@@ -1,3 +1,4 @@
+import { ChangeEvent } from "react";
 
 export interface InputProps {
     inputId?: string;
@@ -5,5 +6,6 @@ export interface InputProps {
     label?: string;
     type?: string;
     isInvalid?: boolean;
-    children?: any
+    children?: any;
+    inputChange?(e: ChangeEvent<HTMLInputElement>): void;
 }
