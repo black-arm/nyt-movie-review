@@ -2,21 +2,25 @@ import Head from 'next/head'
 import styles from '@/styles/Home.module.css'
 import MovieForm from '@/components/smart/movie-form/movie-form'
 import { MovieQuery } from '@/model'
-import { fetchMovieReviewByMovieQuery } from '@/store/mr-async-thunks'
+import { fetchMovieReviewByMovieQuery, fetchReviewer } from '@/store/mr-async-thunks'
 import { useMrDispatch, useMrSelector } from '@/store'
 import MovieItem from '@/components/dumb/movieItem/MovieItem'
 import Button from '@/components/dumb/button/Button'
 import { useState } from 'react'
 import TopBar from '@/components/dumb/topBar/TopBar'
 import Spinner from '@/components/dumb/spinner/Spinner'
+import Modal from '@/components/dumb/modal/Modal'
 
 export default function Home() {
 
   const [movieQuery, setMovieQuery] = useState<MovieQuery>()
+  const [modalIsOpen, setModalIsOpen] = useState<boolean>(false)
+
   const dispatch = useMrDispatch()
   const movieReviews = useMrSelector((state) => state.movieReview.movies)
   const loading = useMrSelector(state => state.movieReview.loading)
   const viewShowMore = useMrSelector(state => state.movieReview.viewShowMore)
+  const reviewer = useMrSelector(state => state.movieReview.reviewer)
 
   const movieFormSubmit = async (movieQuery: MovieQuery) => {
     setMovieQuery({
@@ -37,6 +41,11 @@ export default function Home() {
     }
   }
 
+  const openReviewerModal = (reviewer: string) => {
+    dispatch(fetchReviewer(reviewer))
+    setModalIsOpen(true)
+  }
+
   return (
     <>
       <Spinner visible={loading === 'pending'}/>
@@ -49,15 +58,14 @@ export default function Home() {
       <TopBar />
       <main className={`${styles.main}`}>
         <MovieForm movieFormSubmit={movieFormSubmit}/>
-        {movieReviews && movieReviews.length > 0 ? <div data-testid='viewList'>
-          {}
-        </div>: null}
         {loading === 'succeded' ? <div data-testid='viewList'>
-          {movieReviews ? movieReviews.map((movie, index) => <MovieItem key={index} movie={movie}/>): 
-            <h3>No movies found</h3>}
+          {movieReviews ? movieReviews.map((movie, index) => <MovieItem key={index} movie={movie} 
+            clickReviewer={openReviewerModal}/>): <h3>No movies found</h3>}
           {viewShowMore ? <Button color='black' buttonTestId='showMore' buttonClick={showMoreClick}>Show More</Button>: null}
         </div> : null}
       </main>
+      {loading === 'succeded' ? <Modal isOpen={modalIsOpen} 
+        closeModal={() => setModalIsOpen(false)} reviewer={reviewer ? reviewer: undefined} /> : null }
     </>
   )
 }

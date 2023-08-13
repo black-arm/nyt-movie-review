@@ -21,9 +21,9 @@ const Modal = ({ isOpen, closeModal, reviewer }: ModalProps) => {
         <div className={styles.modalContent}>
           <h3 data-testid="name">{reviewer?.display_name}</h3>
           <div className={styles.modalInfo}>
-            <div data-testid="bio" 
+            { reviewer?.bio ? <div data-testid="bio" 
               className={styles.bio} dangerouslySetInnerHTML={{ __html: reviewer?.bio ? DOMPurify.sanitize(reviewer.bio): '' }}>
-            </div>
+            </div> : <div data-testid="bio" ><h4>No Biography available</h4></div>}
             <div data-testid="image">
               <MrImage src={src} width={width} height={height} alt='profile'/>
             </div>

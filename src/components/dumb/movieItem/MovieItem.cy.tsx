@@ -31,21 +31,6 @@ describe('<MovieItem />', () => {
     cy.mount(<MovieItem movie={movieReview} />)
   })
 
-  /*
-  it('style requirements', () => {
-    cy.mount(<MovieItem />)
-    cy.getByData('movieItem').should('have.attr', 'class')
-      .and('match', /movieItem/)
-    cy.getByData('movie').should('have.attr', 'class')
-      .and('match', /movieInfo/)
-    cy.getByData('movie').find('h2').should('have.attr', 'class')
-      .and('match', /noMargin/)
-    cy.getByData('movie').find('p').should('have.attr', 'class')
-      .and('match', /noMargin/)
-    cy.getByData('movie').find('h4').should('have.attr', 'class')
-      .and('match', /noMargin/)
-  })*/
-
   it('should to view movie info', () => {
     cy.getByData('date').should('have.text', '2023-04-05')
     cy.getByData('movie').find('h2').should('have.text', movieReview.headline)
@@ -57,8 +42,18 @@ describe('<MovieItem />', () => {
   })
 
   it('should view no photo available', () => {
-    movieReview.multimedia = undefined;
-    cy.mount(<MovieItem movie={movieReview} />)
+    const movieReviewWithoutPhoto: MovieReview = {
+      ...movieReview,
+      multimedia: undefined
+    }
+    cy.mount(<MovieItem movie={movieReviewWithoutPhoto} />)
     cy.getByData('image').find('img').should('have.attr', 'src', '/images/no_photo_available.jpeg');
+  })
+
+  it('should click reviewer', () => {
+    const clickReviewer = cy.spy().as('clickReviewer')
+    cy.mount(<MovieItem movie={movieReview} clickReviewer={clickReviewer} />)
+    cy.getByData('reviewer').find('span').click()
+    cy.get('@clickReviewer').should('have.been.called', 1)
   })
 })

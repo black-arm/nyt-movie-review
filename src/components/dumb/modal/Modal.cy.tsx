@@ -57,9 +57,21 @@ describe('<Modal />', () => {
 
       it('should view image not available', () => {
         
-        reviewer.multimedia = undefined
-        cy.mount(<Modal isOpen={true} reviewer={reviewer} />)
+        const newReviewer = {
+          ...reviewer,
+          multimedia: undefined
+        }
+        cy.mount(<Modal isOpen={true} reviewer={newReviewer} />)
         cy.getByData('image').find('img').should('have.attr', 'src', '/images/no_photo_available.jpeg')
         
+      })
+
+      it('should view "No Biography available"', () => {
+        const newReviewer = {
+          ...reviewer,
+          bio: undefined
+        }
+        cy.mount(<Modal isOpen={true} reviewer={newReviewer} />)
+        cy.getByData('bio').find('h4').contains('No Biography available')
       })
 })
