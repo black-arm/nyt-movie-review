@@ -60,7 +60,7 @@ describe('mrReducer', () => {
 
             await store.dispatch(fetchMovieReviewByMovieQuery({ movieQuery: movieQuery, isNew: true}))
             const state = store.getState().movieReview
-            expect(state.movies.length).to.equal(2)
+            expect(state.movies?.length).to.equal(2)
         })
 
         it('should viewShowMore to true', async () =>{

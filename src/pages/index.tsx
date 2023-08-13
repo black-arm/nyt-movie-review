@@ -58,17 +58,17 @@ export default function Home() {
       <TopBar />
       <main className={`${styles.main}`}>
         <MovieForm movieFormSubmit={movieFormSubmit}/>
-        {loading !== 'failed' ? 
+        {loading !== 'idle'  ? 
           <div data-testid='viewList'>
             {movieReviews ? 
               movieReviews.map((movie, index) => <MovieItem key={index} 
                                                             movie={movie} 
                                                             clickReviewer={openReviewerModal}/>)
-              : <div className={styles.noMovieBox}>
+              : <div data-testid='noMoviesBox' className={styles.noMovieBox}>
                   <h3>No movies found</h3>
                 </div>}
             {viewShowMore ? 
-              <div className={styles.showMoreBox}>
+              <div data-testid='showMoreBox' className={styles.showMoreBox}>
                 <Button color='black' 
                   buttonTestId='showMore' 
                   buttonClick={showMoreClick}>Show More</Button>
@@ -76,11 +76,9 @@ export default function Home() {
               : null}
           </div> : null}
       </main>
-      {loading === 'succeded' ? 
-        <Modal isOpen={modalIsOpen} 
+      <Modal isOpen={modalIsOpen} 
               closeModal={() => setModalIsOpen(false)} 
-              reviewer={reviewer ? reviewer: undefined} /> 
-        : null }
+              reviewer={reviewer ? reviewer: undefined} />
     </>
   )
 }

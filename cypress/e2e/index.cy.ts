@@ -1,6 +1,12 @@
 
 describe('index.tsx', () => {
 
+    it('should showMore button and noMoviesBox not exist', () => {
+        cy.visit('/')
+        cy.getByData('showMoreBox').should('not.exist')
+        cy.getByData('noMoviesBox').should('not.exist')
+    })
+
     it('search movie', () => {
         cy.intercept('**/reviews/search.json*', (req) => { 
             req.reply({
@@ -18,7 +24,6 @@ describe('index.tsx', () => {
             .should('have.length', 2)
         
     })
-
     
     it('search movie is empty', () => {
         cy.intercept('**/reviews/search.json*', { fixture: 'empty-response.json'}).as('emptyResponse')

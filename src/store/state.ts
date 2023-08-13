@@ -11,7 +11,7 @@ export interface State {
 
 export const initialState: State = {
     movies: null,
-    viewShowMore: true,
+    viewShowMore: false,
     errorMessage: null,
     loading: 'idle',
     reviewer: null
